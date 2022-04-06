@@ -1,4 +1,4 @@
-function szamol() {
+let szamolas = function szamol() {
     let F = document.getElementById('fogyasztas').value;
     let V = document.getElementById('tank').value;
     let Ut = document.getElementById('ut').value;
@@ -7,11 +7,11 @@ function szamol() {
 
 
     if (megtehetoUt < Ut) {
-    document.getElementById('megoldas').innerHTML = "Az út során tankolni kell!"
+        document.getElementById('megoldas').innerHTML = "Az út során tankolni kell!"
     } else {
-    document.getElementById('megoldas').innerHTML = "Az út megtehető tankolás nélkül."
+        document.getElementById('megoldas').innerHTML = "Az út megtehető tankolás nélkül."
     }
 }
 
-
+document.getElementById('szamol').addEventListener('click', szamolas)
  
